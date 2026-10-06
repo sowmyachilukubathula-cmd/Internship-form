@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+
+    <style>
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScIHeK-i671o-GoAzlHvbu9c4-bTGmKpnn1hWPwdSs3Q&s=10");
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-style: inset;
+            border-width: 10px;
+            border-color: grey;
+        }
+        
+        .title {
+            text-align: center;
+            border-style: solid;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 class="title">*** INTERNSHIP FORM ***</h3>
+
+    <form method="post" enctype="multipart/form-data">
+
+        <p>Enter your name:</p>
+        <input type="text" name="name">
+
+        <p>Enter your Email:</p>
+        <input type="email" name="email">
+
+        <p>Enter your password:</p>
+        <input type="password" name="password">
+
+        <p>Enter your age:</p>
+        <input type="number" name="age">
+
+        <p>Gender:</p>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+
+        <p>About yourself:</p>
+        <textarea rows="10" cols="80" name="description"></textarea>
+
+        <p>What programming languages should you know?</p>
+        <input type="checkbox" name="c" value="on"> C<br>
+        <input type="checkbox" name="cpp" value="on"> C++<br>
+        <input type="checkbox" name="java" value="on"> Java<br>
+        <input type="checkbox" name="python" value="on"> Python<br>
+        <input type="checkbox" name="javascript" value="on"> JavaScript<br>
+
+        <p>How long do you want to participate in our internship program?</p>
+
+        <select name="dropdown">
+            <option value="3 months">3 months</option>
+            <option value="6 months">6 months</option>
+            <option value="1 year">1 year</option>
+        </select>
+
+        <p>Upload your Resume:</p>
+        <input type="file" name="fileupload" accept=".pdf,.doc,.docx">
+
+        <p></p>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
